@@ -46,19 +46,19 @@ header .logo {
   font-size: 20px;
 }
 
-main {
+main .content {
   background-image: url("./images/background.svg");
   background-repeat: no-repeat;
   background-position: top center;
-}
-
-main .content {
+  background-size: cover;
+  width: 70vw;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 20px 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 50vw;
-  margin: 0 auto;
   align-items: center;
+  justify-content: center;
   color: #172b4d;
 }
 
@@ -75,6 +75,7 @@ main p {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 58px;
+  font-size: 20px;
 }
 
 h1 span {
@@ -82,12 +83,14 @@ h1 span {
 }
 
 main .social {
-  width: fit-content;
-  /* width: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 58px; */
+  margin-bottom: 58px;
+}
+
+main .social svg {
+  padding: 14px;
 }
 
 main .action {
