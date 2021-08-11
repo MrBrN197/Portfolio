@@ -29,9 +29,11 @@ header {
 header > * {
   margin: 0 40px;
   flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-header .heading {
+header .logo {
   font-weight: 600;
   font-size: 20px;
 }
