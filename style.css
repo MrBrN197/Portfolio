@@ -27,21 +27,21 @@ body {
   background-color: #fff;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
-header > * {
+.header > * {
   margin: 0 40px;
   flex-shrink: 0;
   text-decoration: none;
   color: inherit;
 }
 
-header .logo {
+.header .logo {
   font-weight: 600;
   font-size: 20px;
 }
@@ -51,7 +51,7 @@ main .content {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  width: 70vw;
+  width: 500px;
   margin: 0 auto;
   height: 100vh;
   padding: 20px 80px;
