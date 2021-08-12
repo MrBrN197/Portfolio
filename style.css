@@ -16,6 +16,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src:
+    url('./fonts/Inter/Inter-SemiBold.woff') format('woff'),
+    url('./fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -104,6 +113,7 @@ main .action {
 
 .section-heading h1 {
   margin: 0 20px;
+  color: #172b4d;
 }
 
 .section-heading .indicator {
@@ -135,9 +145,15 @@ main .action {
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #d0d9d4;
+  width: 327px;
+}
+
+.card h2 {
+  font-weight: 600;
 }
 
 .card .inner-box {
+  width: 100%;
   border-radius: 8px;
   background-color: #fff;
   height: 222px;
@@ -189,6 +205,16 @@ button:hover {
   align-items: center;
 }
 
+.about .description {
+  margin: 0 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.about .card-container {
+  margin-top: 59px;
+}
+
 .about .card {
   background-color: rgba(235, 240, 238, 1);
   display: flex;
@@ -197,7 +223,6 @@ button:hover {
   margin: 26px;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #d0d9d4;
 }
 
 .about .card .icon {
@@ -230,7 +255,8 @@ button:hover {
 .about .footer-text {
   font-size: 40px;
   font-weight: bold;
-  line-height: 1.2;
-  margin: 0 30px;
-  color: #0f1b30;
+  line-height: 52px;
+  margin: 0 24px;
+  font-style: normal;
+  color: #172b4d;
 }
