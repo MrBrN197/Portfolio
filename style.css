@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Inter';
+  src:
+    url('./fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('./fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:
+    url('./fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('./fonts/Inter/Inter-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, 'Times New Roman', Times, serif;
+  color: #344563;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header > * {
+  margin: 0 40px;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+main .content {
+  background-image: url("./images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #172b4d;
+}
+
+main h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 58px 0;
+}
+
+main p {
+  text-align: center;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 58px;
+  font-size: 20px;
+}
+
+h1 span {
+  color: #36b37e;
+}
+
+main .social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+main .social svg {
+  padding: 14px;
+}
+
+main .action {
+  margin-bottom: 58px;
+}
