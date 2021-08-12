@@ -51,9 +51,7 @@ main .content {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  width: 500px;
   margin: 0 auto;
-  height: 100vh;
   padding: 20px 80px;
   display: flex;
   flex-direction: column;
