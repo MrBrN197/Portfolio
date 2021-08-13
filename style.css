@@ -213,6 +213,22 @@ button:hover {
 
 .about {
   align-items: center;
+  position: relative;
+  margin-top: 68px;
+}
+
+.about .crane {
+  position: absolute;
+}
+
+.about .crane.right {
+  right: 0;
+  top: -50px;
+}
+
+.about .crane.left {
+  left: 0;
+  top: 230px;
 }
 
 .about .description {
