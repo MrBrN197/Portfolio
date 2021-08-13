@@ -36,6 +36,11 @@ body {
   background-color: #fff;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -62,8 +67,6 @@ main .content {
   margin: 0 auto;
   padding: 20px 20px;
   padding-bottom: 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #172b4d;
@@ -105,8 +108,6 @@ main .action {
 }
 
 .section-heading {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 24px;
 }
@@ -138,8 +139,6 @@ main .action {
 
 .card {
   background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 26px;
   border-radius: 8px;
@@ -157,8 +156,6 @@ main .action {
   border-radius: 8px;
   background-color: #fff;
   height: 222px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -200,8 +197,6 @@ button:hover {
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -217,8 +212,6 @@ button:hover {
 
 .about .card {
   background-color: rgba(235, 240, 238, 1);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 26px;
   border-radius: 8px;
