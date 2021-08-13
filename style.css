@@ -133,11 +133,11 @@ main .action {
 
 .recent-works .image {
   background-color: #ebf0ee;
-  height: 250px;
   width: 100%;
 }
 
 .card {
+  position: relative;
   background-color: whitesmoke;
   align-items: center;
   margin: 26px;
@@ -145,6 +145,21 @@ main .action {
   overflow: hidden;
   border: 1px solid #d0d9d4;
   width: 327px;
+  height: 474px;
+}
+
+.card > .inner-box {
+  position: absolute;
+  bottom: 0;
+}
+
+.card > .image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 40%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .card h2 {
@@ -214,8 +229,6 @@ button:hover {
   background-color: rgba(235, 240, 238, 1);
   align-items: center;
   margin: 26px;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .about .card .icon {
