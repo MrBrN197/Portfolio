@@ -36,9 +36,18 @@ body {
   background-color: #fff;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .float {
   float: left;
   flex-direction: column;
+}
+
+.clear {
+  clear: left;
 }
 
 .header {
@@ -105,6 +114,10 @@ main .social svg {
 
 main .action {
   margin-bottom: 22px;
+}
+.action {
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .section-heading {
