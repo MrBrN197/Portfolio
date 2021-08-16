@@ -178,11 +178,11 @@ main .action {
 .card ul {
   list-style-type: none;
   margin: 0 11px;
-  display: flex;
-  gap: 8px;
 }
 
 .card ul li {
+  float: left;
+  margin: 0 4px;
   background-color: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
