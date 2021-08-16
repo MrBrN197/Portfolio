@@ -36,8 +36,8 @@ body {
   background-color: #fff;
 }
 
-.flex {
-  display: flex;
+.float {
+  float: left;
   flex-direction: column;
 }
 
