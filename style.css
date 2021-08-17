@@ -191,7 +191,8 @@ main .action {
   width: max-content;
 }
 
-button {
+button,
+input[type="submit"] {
   background-color: #36b37f;
   border: none;
   padding: 12px;
@@ -203,11 +204,13 @@ button {
   text-align: justify;
 }
 
-button:active {
+button:active,
+input[type="submit"]:active {
   background-color: #008552;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -281,4 +284,74 @@ button:hover {
   margin: 0 24px;
   font-style: normal;
   color: #172b4d;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-form .container {
+  width: 327px;
+  margin: 0 auto;
+  margin-bottom: 336px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+  margin: 12px 0;
+  font-family: Inter, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #60c095;
+  height: 114px;
+}
+
+.contact-form input::placeholder {
+  color: #6b778c;
+}
+
+.contact-form textarea::placeholder {
+  color: #091e42;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form form input[type="submit"] {
+  font-weight: 500;
+  font-size: 17px;
+  align-self: center;
+  padding: 12px;
+}
+
+.contact-form .social {
+  margin: 0;
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 44px;
+}
+
+.contact-form .social svg {
+  padding: 0;
+  padding: 8px;
+}
+
+.contact-form p {
+  margin-top: 19px;
+}
+
+.contact-form .contact-bg {
+  position: absolute;
+  right: 0;
+  bottom: 45px;
 }
