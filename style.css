@@ -300,6 +300,10 @@ button:hover, input[type="submit"]:hover {
   border-radius: 4px;
   padding: 15px 16px;
   margin: 12px 0;
+  font-family: Inter,'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .contact-form textarea {
   padding: 12px;
@@ -307,9 +311,21 @@ button:hover, input[type="submit"]:hover {
   height: 114px;
 }
 
+.contact-form input::placeholder {
+  color: #6b778c;
+}
+.contact-form textarea::placeholder {
+  color: #091e42;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
+}
+
+.contact-form input[type="submit"] {
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .contact-form .social {
@@ -321,4 +337,8 @@ button:hover, input[type="submit"]:hover {
 .contact-form .social svg {
   padding: 0;
   padding: 8px;
+}
+
+.contact-form p {
+  margin-top: 19px;
 }
