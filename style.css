@@ -282,3 +282,27 @@ button:hover {
   font-style: normal;
   color: #172b4d;
 }
+
+.contact-form .container {
+  width: 327px;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+}
+.contact-form textarea {
+  padding: 12px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
