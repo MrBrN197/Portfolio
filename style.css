@@ -191,7 +191,7 @@ main .action {
   width: max-content;
 }
 
-button {
+button, input[type="submit"] {
   background-color: #36b37f;
   border: none;
   padding: 12px;
@@ -203,11 +203,11 @@ button {
   text-align: justify;
 }
 
-button:active {
+button:active, input[type="submit"]:hover {
   background-color: #008552;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -286,10 +286,12 @@ button:hover {
 .contact-form .container {
   width: 327px;
   margin: 0 auto;
+  margin-bottom: 336px;
 }
 
-.contact-form form {
-  flex-direction: column;
+.contact-form form input[type="submit"] {
+  align-self: center;
+  padding: 12px;
 }
 
 .contact-form input,
@@ -297,12 +299,26 @@ button:hover {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 15px 16px;
+  margin: 12px 0;
 }
 .contact-form textarea {
   padding: 12px;
+  border: 1px solid #60c095;
+  height: 114px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
+}
+
+.contact-form .social {
+  margin: 0;
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 44px;
+}
+.contact-form .social svg {
+  padding: 0;
+  padding: 8px;
 }
