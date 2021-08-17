@@ -203,7 +203,7 @@ button, input[type="submit"] {
   text-align: justify;
 }
 
-button:active, input[type="submit"]:hover {
+button:active, input[type="submit"]:active {
   background-color: #008552;
 }
 
