@@ -283,6 +283,10 @@ button:hover, input[type="submit"]:hover {
   color: #172b4d;
 }
 
+.contact-form {
+  position: relative;
+}
+
 .contact-form .container {
   width: 327px;
   margin: 0 auto;
@@ -341,4 +345,10 @@ button:hover, input[type="submit"]:hover {
 
 .contact-form p {
   margin-top: 19px;
+}
+
+.contact-form .contact-bg {
+  position: absolute;
+  right: 0;
+  bottom: 45px;
 }
