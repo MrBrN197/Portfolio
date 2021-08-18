@@ -85,6 +85,10 @@ a {
   display: inline-block;
 }
 
+.desktop-header a:hover {
+  color: #36b37e;
+}
+
 .desktop-header nav {
   display: block;
   padding: 1px;
@@ -199,14 +203,17 @@ main .action {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    width: 70%;
-    max-width: 1440px;
-    margin: 0 auto;
-    margin-bottom: 250px;
-  }
+.recent-works .card-container {
+  grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.recent-works .card-container {
+  margin-bottom: 250px;
+}
+.recent-works .card {
+  width: 369px;
 }
 
 .recent-works .image {
