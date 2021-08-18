@@ -501,8 +501,36 @@ input[type="submit"]:hover {
   margin-top: 19px;
 }
 
-.contact-form .contact-bg {
+.contact-form .contact-mobile-bg {
   position: absolute;
   right: 0;
   bottom: 45px;
+}
+
+.contact-form .contact-desktop-bg {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.contact-form .contact-desktop-bg.right {
+  right: 0;
+}
+
+.contact-form .contact-desktop-bg.left {
+  left: 0;
+}
+
+.contact-form .contact-desktop-bg.middle {
+  left: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form .contact-desktop-bg {
+    display: inline;
+  }
+  .contact-form .contact-mobile-bg {
+    display: none;
+  }
 }
