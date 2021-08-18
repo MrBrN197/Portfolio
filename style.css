@@ -280,6 +280,7 @@ input[type="submit"] {
   font-family: Inter, 'Times New Roman', Times, serif;
   border-radius: 4px;
   text-align: justify;
+  line-height: 24px;
 }
 
 button:active,
