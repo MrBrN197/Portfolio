@@ -36,6 +36,15 @@ body {
   background-color: #fff;
 }
 
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url("./images/Header-llustration-desktop.svg");
+    background-size: 1440px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -71,14 +80,14 @@ a {
 }
 
 .desktop-header a {
-  /* line-height: 20px; */
   font-weight: 600;
   padding: 10px 12px;
   display: inline-block;
 }
+
 .desktop-header nav {
-  /* background-color: teal; */
   display: block;
+  padding: 1px;
   width: fit-content;
   width: -moz-fit-content;
   margin: 16px auto;
@@ -88,6 +97,7 @@ a {
   .header {
     display: none;
   }
+
   .desktop-header {
     display: block;
   }
@@ -109,13 +119,19 @@ main .content {
   main .content {
     height: 756px;
     width: 920px;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 100px;
+
     /* background-color: tomato; */
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 200px;
-  } 
+    margin-bottom: 300px;
+    background-image: none;
+    justify-content: center;
+  }
 }
 
 main h1 {
