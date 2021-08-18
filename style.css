@@ -409,6 +409,7 @@ input[type="submit"]:hover {
     padding: 0px 134px 0px 128px;
     display: flex;
     align-items: center;
+    margin-bottom: 297px;
   }
   .contact-form .container {
     width: 100%;
@@ -493,6 +494,15 @@ input[type="submit"]:hover {
   margin-top: 44px;
 }
 
+@media screen and (min-width: 1200px ){
+  .contact-form .details {
+    border-top: 1px solid #dfe1e6;
+  }
+  .contact-form .details .social {
+    margin-top: 10px;
+  }
+}
+
 .contact-form .social svg {
   padding: 0;
   padding: 8px;
@@ -512,7 +522,7 @@ input[type="submit"]:hover {
   display: none;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
 }
 
 .contact-form .contact-desktop-bg.right {
