@@ -322,6 +322,16 @@ input[type="submit"]:hover {
   .about .description {
     max-width: 60%;
   }
+  .about .crane.right {
+    transform: scale(3);
+    right: 0;
+    top: -50px;
+  }
+  .about .crane.left {
+    left: 0;
+    top: 100px;
+    transform: scale(3);
+  }
 }
 
 .about .card-container {
