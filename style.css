@@ -410,12 +410,23 @@ input[type="submit"]:hover {
   margin-bottom: 336px;
 }
 
+.contact-form .two-pane .footer-text {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  margin: 0 24px;
+  font-style: normal;
+  color: #172b4d;
+}
+
 @media screen and (min-width: 1200px) {
   .contact-form .two-pane {
-    padding: 0 134px 0 128px;
+    /* padding: 0 134px 0 128px; */
     display: flex;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 297px;
+    width: 1153px;
   }
 
   .contact-form .container {
@@ -426,6 +437,7 @@ input[type="submit"]:hover {
   .contact-form .two-pane .footer-text {
     text-align: left;
     flex-basis: 40%;
+    margin-left: 0;
   }
 
   .contact-form .two-pane form {
@@ -439,15 +451,6 @@ input[type="submit"]:hover {
   .contact-form .details .email-address {
     display: none;
   }
-}
-
-.contact-form .two-pane .footer-text {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 52px;
-  margin: 0 24px;
-  font-style: normal;
-  color: #172b4d;
 }
 
 .contact-form input,
