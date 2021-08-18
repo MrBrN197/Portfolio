@@ -318,14 +318,27 @@ input[type="submit"]:hover {
   margin-bottom: 24px;
 }
 
+@media screen and (min-width: 600px) {
+  .about .description {
+    max-width: 60%;
+  }
+}
+
 .about .card-container {
   margin-top: 59px;
+}
+
+@media screen and (min-width: 800px) {
+  .about .card-container {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .about .card {
   background-color: rgba(235, 240, 238, 1);
   align-items: center;
-  margin: 26px;
+  margin: 26px auto;
 }
 
 .about .card .icon {
