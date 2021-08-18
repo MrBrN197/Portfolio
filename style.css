@@ -304,6 +304,7 @@ input[type="submit"]:hover {
   align-items: center;
   position: relative;
   margin-top: 68px;
+  overflow-x: clip;
 }
 
 .about .crane {
