@@ -36,6 +36,11 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -50,14 +55,42 @@ body {
 
 .header > * {
   margin: 0 40px;
-  flex-shrink: 0;
-  text-decoration: none;
-  color: inherit;
 }
 
 .header .logo {
   font-weight: 600;
   font-size: 20px;
+}
+
+.desktop-header {
+  display: none;
+  text-align: center;
+  background-color: transparent;
+  right: 0;
+  left: 0;
+}
+
+.desktop-header a {
+  /* line-height: 20px; */
+  font-weight: 600;
+  padding: 10px 12px;
+  display: inline-block;
+}
+.desktop-header nav {
+  /* background-color: teal; */
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: 16px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: none;
+  }
+  .desktop-header {
+    display: block;
+  }
 }
 
 main .content {
@@ -70,6 +103,19 @@ main .content {
   align-items: center;
   justify-content: center;
   color: #172b4d;
+}
+
+@media screen and (min-width: 600px) {
+  main .content {
+    height: 756px;
+    width: 920px;
+    /* background-color: tomato; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+  } 
 }
 
 main h1 {
