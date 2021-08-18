@@ -186,11 +186,27 @@ main .action {
   background-color: #36b37e;
 }
 
+@media screen and (min-width: 600px) {
+  .section-heading .indicator {
+    background-color: transparent;
+  }
+}
+
 .recent-works .card-container {
   display: grid;
   justify-items: center;
   color: #3a4a42;
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    width: 70%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+  }
 }
 
 .recent-works .image {
