@@ -201,24 +201,10 @@ main .action {
   justify-items: center;
   color: #3a4a42;
   text-align: center;
-}
-
-.recent-works .card-container {
   grid-template-columns: repeat(auto-fit, minmax(431px, 1fr));
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.recent-works .card-container {
   margin-bottom: 250px;
-}
-.recent-works .card {
-  width: 369px;
-}
-
-.recent-works .image {
-  background-color: #ebf0ee;
-  width: 100%;
 }
 
 .card {
@@ -231,6 +217,15 @@ main .action {
   border: 1px solid #d0d9d4;
   width: 327px;
   height: 474px;
+}
+
+.recent-works .card {
+  width: 369px;
+}
+
+.recent-works .image {
+  background-color: #ebf0ee;
+  width: 100%;
 }
 
 .card > .inner-box {
@@ -332,11 +327,13 @@ input[type="submit"]:hover {
   .about .description {
     max-width: 60%;
   }
+
   .about .crane.right {
     transform: scale(3);
     right: 0;
     top: -50px;
   }
+
   .about .crane.left {
     left: 0;
     top: 100px;
@@ -407,33 +404,34 @@ input[type="submit"]:hover {
 
 @media screen and (min-width: 1200px) {
   .contact-form .two-pane {
-    padding: 0px 134px 0px 128px;
+    padding: 0 134px 0 128px;
     display: flex;
     align-items: center;
     margin-bottom: 297px;
   }
+
   .contact-form .container {
     width: 100%;
+    margin-bottom: 16px;
   }
+
   .contact-form .two-pane .footer-text {
     text-align: left;
     flex-basis: 40%;
   }
+
   .contact-form .two-pane form {
     flex-grow: 1;
   }
+
   .contact-form .two-pane form input[type="submit"] {
     align-self: flex-start;
   }
-  .contact-form  .details .email-address {
+
+  .contact-form .details .email-address {
     display: none;
   }
-
-  .contact-form .container {
-    margin-bottom: 16px;
-  }
 }
-
 
 .contact-form .two-pane .footer-text {
   font-size: 40px;
@@ -454,7 +452,6 @@ input[type="submit"]:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  background-color: cornflowerblue\;
 }
 
 .contact-form textarea {
@@ -495,10 +492,11 @@ input[type="submit"]:hover {
   margin-top: 44px;
 }
 
-@media screen and (min-width: 1200px ){
+@media screen and (min-width: 1200px) {
   .contact-form .details {
     border-top: 1px solid #dfe1e6;
   }
+
   .contact-form .details .social {
     margin-top: 10px;
   }
@@ -542,6 +540,7 @@ input[type="submit"]:hover {
   .contact-form .contact-desktop-bg {
     display: inline;
   }
+
   .contact-form .contact-mobile-bg {
     display: none;
   }
