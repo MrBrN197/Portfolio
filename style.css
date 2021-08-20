@@ -168,12 +168,48 @@ main .social {
   margin-bottom: 58px;
 }
 
+.social svg {
+  transition: all 200ms;
+  cursor: pointer;
+  color: #505F79;
+}
+
+.social svg:hover {
+  animation: rotation 200ms linear both;
+  /* transform: translateY(-2px); */
+  color: rgba(54, 179, 126, 1);
+}
+
+@keyframes rotation {
+  0%,100% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(1.1) rotateZ(20deg);
+  }
+}
+
 main .social svg {
   padding: 14px;
 }
 
 main .action {
   margin-bottom: 22px;
+  cursor: pointer;
+}
+
+main .action svg:hover {
+  animation: action-rot 250ms ease-in-out;
+}
+
+@keyframes action-rot {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+
 }
 
 .section-heading {
@@ -573,4 +609,12 @@ input[type="submit"]:hover {
   .contact-form .contact-mobile-bg {
     display: none;
   }
+}
+
+
+.styled {
+  color: #008552 !important;
+  width: 100px;
+  height: 100px;
+  fill: currentColor;
 }
