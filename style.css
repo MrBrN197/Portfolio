@@ -84,9 +84,11 @@ a {
   font-weight: 600;
   padding: 10px 12px;
   display: inline-block;
+  transition: all 200ms;
 }
 
 .desktop-header a:hover {
+  transform: translateY(-2px);
   color: #36b37e;
 }
 
