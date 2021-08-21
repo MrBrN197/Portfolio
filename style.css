@@ -173,31 +173,37 @@ main .social {
 .social svg {
   transition: all 200ms;
   cursor: pointer;
-  color: #505F79;
-}
-
-.social svg:hover {
-  animation: rotation 200ms linear both;
-  /* transform: translateY(-2px); */
-  color: rgba(54, 179, 126, 1);
-}
-
-@keyframes rotation {
-  0%,100% {
-    transform: scale(1) rotateZ(0);
-  }
-  50% {
-    transform: scale(1.1) rotateZ(20deg);
-  }
+  color: #505f79;
 }
 
 main .social svg {
   padding: 14px;
 }
 
+.social svg:hover {
+  animation: rotation 200ms linear both;
+  color: rgba(54, 179, 126, 1);
+}
+
+@keyframes rotation {
+  0%,
+  100% {
+    transform: scale(1) rotateZ(0);
+  }
+
+  50% {
+    transform: scale(1.1) rotateZ(20deg);
+  }
+}
+
 main .action {
   margin-bottom: 22px;
   cursor: pointer;
+}
+
+.contact-form .social svg {
+  padding: 0;
+  padding: 8px;
 }
 
 main .action svg:hover {
@@ -208,10 +214,10 @@ main .action svg:hover {
   0% {
     transform: rotateZ(0);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
-
 }
 
 .section-heading {
@@ -255,18 +261,20 @@ main .action svg:hover {
   width: 327px;
   height: 474px;
   transition: all 200ms;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.05),
-              0 2px 2px rgba(0,0,0,0.05),
-              0 4px 4px rgba(0,0,0,0.05);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.05),
+    0 2px 2px rgba(0, 0, 0, 0.05),
+    0 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.05),
-              0 2px 2px rgba(0,0,0,0.05),
-              0 4px 4px rgba(0,0,0,0.05),
-              0 8px 8px rgba(0,0,0,0.05),
-              0 16px 16px rgba(0,0,0,0.05),
-              0 32px 32px rgba(0,0,0,0.05);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.05),
+    0 2px 2px rgba(0, 0, 0, 0.05),
+    0 4px 4px rgba(0, 0, 0, 0.05),
+    0 8px 8px rgba(0, 0, 0, 0.05),
+    0 16px 16px rgba(0, 0, 0, 0.05),
+    0 32px 32px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
 }
 
@@ -407,16 +415,19 @@ input[type="submit"]:hover {
   }
 
   @keyframes crane-float {
-    0% {transform: scale(3) translateY(0);}
-    100% {transform: scale(3) translateY(-10px);}
+    0% {
+      transform: scale(3) translateY(0);
+    }
+
+    100% {
+      transform: scale(3) translateY(-10px);
+    }
   }
 
   .about .crane.right {
     transform: scale(3);
     right: 0;
     top: -50px;
-  }
-  .about .crane.right {
     animation-delay: -0.6s;
     animation-duration: 2s;
   }
@@ -597,11 +608,6 @@ input[type="submit"]:hover {
   }
 }
 
-.contact-form .social svg {
-  padding: 0;
-  padding: 8px;
-}
-
 .contact-form p {
   margin-top: 19px;
 }
@@ -640,7 +646,6 @@ input[type="submit"]:hover {
     display: none;
   }
 }
-
 
 .styled {
   color: #008552 !important;
