@@ -417,7 +417,7 @@ input[type="submit"]:active {
   }
 
   .about .crane {
-    animation: crane-float 2s alternate infinite ease-in-out;
+    animation: crane-float 2s alternate 5 ease-in-out;
   }
 
   @keyframes crane-float {
