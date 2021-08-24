@@ -646,10 +646,3 @@ input[type="submit"]:active {
     display: none;
   }
 }
-
-.styled {
-  color: #008552 !important;
-  width: 100px;
-  height: 100px;
-  fill: currentColor;
-}
