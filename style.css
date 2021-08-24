@@ -367,15 +367,15 @@ input[type="submit"] {
   transition: all 200ms;
 }
 
-button:active,
-input[type="submit"]:active {
-  background-color: #008552;
-}
-
 button:hover,
 input[type="submit"]:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background-color: #3ebe89;
+}
+
+button:active,
+input[type="submit"]:active {
+  background-color: #008552;
 }
 
 .about {
