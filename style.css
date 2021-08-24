@@ -30,6 +30,12 @@
   padding: 0;
 }
 
+:root {
+  --green-color: #36b37e;
+  --light-green: #36b37e;
+  --bg-color: #ebf0ee;
+}
+
 body {
   font-family: Inter, 'Times New Roman', Times, serif;
   color: #344563;
@@ -89,7 +95,7 @@ a {
 
 .desktop-header a:hover {
   transform: translateY(-2px);
-  color: #36b37e;
+  color: var(--light-green);
 }
 
 .desktop-header nav {
@@ -160,7 +166,7 @@ main p {
 }
 
 h1 span {
-  color: #36b37e;
+  color: var(--light-green);
 }
 
 main .social {
@@ -234,7 +240,7 @@ main .action svg:hover {
   width: 48px;
   height: 4px;
   border-radius: 24px;
-  background-color: #36b37e;
+  background-color: var(--light-green);
 }
 
 @media screen and (min-width: 992px) {
@@ -252,7 +258,7 @@ main .action svg:hover {
 .card {
   box-sizing: border-box;
   position: relative;
-  background-color: #ebf0ee;
+  background-color: var(--bg-color);
   align-items: center;
   margin: 26px;
   border-radius: 8px;
@@ -302,7 +308,7 @@ main .action svg:hover {
 }
 
 .recent-works .image {
-  background-color: #ebf0ee;
+  background-color: var(--bg-color);
   width: 100%;
 }
 
@@ -343,7 +349,7 @@ main .action svg:hover {
 }
 
 .card ul li {
-  background-color: #ebf0ee;
+  background-color: var(--bg-color);
   border-radius: 4px;
   padding: 8px 12px;
   font-weight: 600;
