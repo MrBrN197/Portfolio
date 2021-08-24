@@ -31,8 +31,8 @@
 }
 
 :root {
-  --green-color: #36b37e;
-  --light-green: #36b37e;
+  --green-color: #348463;
+  --light-green: #348463;
   --bg-color: #ebf0ee;
 }
 
@@ -359,7 +359,7 @@ main .action svg:hover {
 
 button,
 input[type="submit"] {
-  background-color: #36b37f;
+  background-color: var(--green-color);
   border: none;
   padding: 12px;
   color: white;
@@ -496,7 +496,7 @@ input[type="submit"]:active {
 
 .about .card ul li {
   background-color: #fff;
-  color: rgba(54, 179, 126, 1);
+  color: var(--green-color);
   margin: 0;
 }
 
