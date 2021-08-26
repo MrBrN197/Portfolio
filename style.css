@@ -393,6 +393,7 @@ input[type="submit"]:active {
 
 .about .crane {
   position: absolute;
+  animation: crane-float 2s alternate 5 ease-in-out both;
 }
 
 .about .crane.right {
@@ -409,10 +410,6 @@ input[type="submit"]:active {
   margin: 0 12px;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-.about .crane {
-  animation: crane-float 2s alternate 5 ease-in-out both;
 }
 
 @keyframes crane-float {
