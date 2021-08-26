@@ -412,7 +412,7 @@ input[type="submit"]:active {
 }
 
 .about .crane {
-  animation: crane-float 2s alternate 3 ease-in-out;
+  animation: crane-float 2s alternate 5 ease-in-out both;
 }
 
 @keyframes crane-float {
@@ -431,7 +431,7 @@ input[type="submit"]:active {
   }
 
   .about .crane {
-    animation: crane-float 2s alternate 5 ease-in-out;
+    animation: crane-float 2s alternate 5 ease-in-out both;
   }
 
   @keyframes crane-float {
