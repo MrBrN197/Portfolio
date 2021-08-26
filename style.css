@@ -411,6 +411,20 @@ input[type="submit"]:active {
   margin-bottom: 24px;
 }
 
+.about .crane {
+  animation: crane-float 2s alternate 3 ease-in-out;
+}
+
+@keyframes crane-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 @media screen and (min-width: 992px) {
   .about .description {
     max-width: 60%;
