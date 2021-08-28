@@ -6,11 +6,8 @@
 
 ___
 
-### Preview Images
-<img src="./images/screen_1.png" width=200>
-<img src="./images/screen_2.png" width=200>
-<img src="./images/screen_3.png" width=200>
-
+### Preview
+<img src="./images/desktop.png">
 ---
 
 ## Live Demo
