@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=true');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=true');
 
 * {
   margin: 0;
@@ -9,6 +9,7 @@
   --green-color: #348463;
   --light-green: #348463;
   --bg-color: #ebf0ee;
+  --font-color2: #3a4a42;
 }
 
 body {
@@ -25,6 +26,14 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
   }
+}
+
+ul {
+  list-style-type: none;
+}
+
+svg {
+  display: block;
 }
 
 a {
@@ -245,7 +254,7 @@ main .action svg:hover {
 }
 
 .recent-works .card-container {
-  color: #3a4a42;
+  color: var(--font-color2);
   text-align: center;
   margin-bottom: 250px;
 }
@@ -335,7 +344,6 @@ main .action svg:hover {
 }
 
 .card ul {
-  list-style-type: none;
   margin: 0 11px;
   display: flex;
   flex-wrap: wrap;
@@ -657,4 +665,39 @@ input[type="submit"]:active {
   .contact-form .contact-mobile-bg {
     display: none;
   }
+}
+
+/* MODAL */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 0 28px;
+  opacity: 0;
+  transition: all 200ms;
+  z-index: -1000;
+}
+
+#modal #close {
+  margin-left: auto;
+  padding: 18px;
+  width: fit-content;
+  width: -moz-fit-content;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#modal ul li {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--font-color2);
+  cursor: pointer;
+}
+
+#modal ul li + li {
+  padding-top: 20px;
 }
