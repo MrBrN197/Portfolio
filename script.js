@@ -21,13 +21,21 @@ const modalHTML = `
 </nav>`;
 
 document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+  modal.innerHTML = modalHTML;
+
+  const close = modal.querySelector('#modal #close');
+  close.addEventListener('click', () => {
+    modal.style.opacity = 0;
+    modal.style.zIndex = -1000;
+    document.body.removeChild(modal);
+  });
+
   const hamburger = document.getElementById('hamburger');
   hamburger.addEventListener('click', () => {
-    const modal = document.createElement('div');
-    modal.id = 'modal';
     modal.style.opacity = 1;
     modal.style.zIndex = 1000;
-    modal.innerHTML = modalHTML;
     document.body.appendChild(modal);
   });
 });
