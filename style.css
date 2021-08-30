@@ -698,14 +698,40 @@ input[type="submit"]:active {
   margin-top: 20px;
 }
 
+#modal #close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 #modal ul li {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: var(--font-color2);
   cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+}
+
+#modal ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: rgba(54, 179, 126, 1);
+  transition: width 120ms ease-in;
+}
+
+#modal ul li a {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: inherit;
 }
 
 #modal ul li + li {
   padding-top: 20px;
+}
+
+#modal ul li:hover a::after {
+  width: 100%;
 }

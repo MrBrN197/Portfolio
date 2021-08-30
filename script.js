@@ -38,4 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.zIndex = 1000;
     document.body.appendChild(modal);
   });
+
+  const listItems = modal.querySelectorAll('#modal nav ul li');
+
+  listItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      modal.style.opacity = 0;
+      modal.style.zIndex = -1000;
+      document.body.removeChild(modal);
+    });
+  });
 });
