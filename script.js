@@ -49,10 +49,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.querySelectorAll('.see-project').forEach((btn) => {
+  const projectContent = [
+    {
+      featuredImage: './images/project-modal-bg-image.png',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Keeping track of hudnreds of components',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+    {
+      featuredImage: './images/project-2.jpg',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Project 2',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+    {
+      featuredImage: './images/project-3.jpg',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Project 3',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+    {
+      featuredImage: './images/project-4.jpg',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Project 4',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+    {
+      featuredImage: './images/project-5.jpg',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Project 5',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+    {
+      featuredImage: './images/project-6.jpg',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
+      name: 'Project 6',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+    },
+  ];
+
+  document.querySelectorAll('.see-project').forEach((btn, idx) => {
     btn.addEventListener('click', () => {
       const projectModal = document.getElementById('project-modal');
       projectModal.style.display = 'block';
+
+      const projectDetails = projectContent[idx];
+
+      const featuredImage = projectModal.querySelector('img');
+      featuredImage.src = projectDetails.featuredImage;
+      const description = projectModal.querySelector('.description');
+      description.textContent = projectDetails.description;
+      const name = projectModal.querySelector('.heading');
+      name.textContent = projectDetails.name;
+      const technologies = projectModal.querySelectorAll('.badges .badge');
+
+      for (let i = 0; i < technologies.length; i += 1) {
+        const badge = technologies[i];
+        badge.textContent = projectDetails.technologies[i];
+      }
+      projectModal.querySelectorAll('.options .button').forEach((x, idx) => {
+        x.href = projectDetails.links[idx % 2];
+      });
     });
   });
 

@@ -352,7 +352,7 @@ main .action svg:hover {
   position: absolute;
   display: block;
   width: 100%;
-  bottom: 40%;
+  height: 60%;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -390,6 +390,7 @@ main .action svg:hover {
   justify-content: center;
 }
 
+a.button,
 button,
 input[type="submit"] {
   background-color: var(--green-color);
@@ -406,12 +407,14 @@ input[type="submit"] {
   transition: all 200ms;
 }
 
+a.button:hover,
 button:hover,
 input[type="submit"]:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   background-color: #3ebe89;
 }
 
+a.button:active,
 button:active,
 input[type="submit"]:active {
   background-color: #008552;
@@ -720,10 +723,6 @@ input[type="submit"]:active {
   margin-top: 20px;
 }
 
-#modal #close:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 #modal ul li {
   font-weight: 600;
   font-size: 32px;
@@ -759,7 +758,7 @@ input[type="submit"]:active {
 }
 
 #project-modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -768,6 +767,7 @@ input[type="submit"]:active {
   background-color: #c1c7d0;
   opacity: 1;
   z-index: 1000;
+
   /* transition: opacity 200ms; */
   padding: 16px;
   color: var(--font-color1);
@@ -800,7 +800,7 @@ input[type="submit"]:active {
 }
 
 #project-modal #close:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 0, 0, 0.45);
 }
 
 #project-modal .image {
@@ -809,6 +809,7 @@ input[type="submit"]:active {
   flex-shrink: 1;
   flex-grow: 1;
   min-height: 100px;
+  border-radius: 8px;
 }
 
 #project-modal .heading {
@@ -844,28 +845,90 @@ input[type="submit"]:active {
   gap: 12px;
 }
 
-#project-modal .options button {
+#project-modal .options .button {
   background-color: #36b37f;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
   /* width: 100%; */
   font-size: 17px;
   line-height: 24px;
+
   /* max-width: 12em; */
   overflow: hidden;
   width: 100%;
 }
 
-#project-modal .options button .text {
+#project-modal .options .button .text {
   display: inline-block;
   width: max-content;
 }
 
-#project-modal .options button .icon {
+#project-modal .options .button .icon {
   display: inline-block;
   vertical-align: middle;
+
   /* background-color: rgba(0, 0, 0, 0.1); */
   width: 1.6em;
+}
+
+#project-modal .heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-modal .desktop-version {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #project-modal {
+    background-color: crimson;
+    padding: 122px 260px;
+  }
+
+  #project-modal #close {
+    position: static;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 14px;
+  }
+
+  #project-modal .image {
+    height: 616px;
+    object-position: center center;
+  }
+
+  #project-modal .options {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  #project-modal .options .button {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 48px;
+    box-sizing: border-box;
+    gap: 14px;
+  }
+
+  #project-modal .desktop-version {
+    display: flex;
+  }
+
+  #project-modal .mobile-version {
+    display: none;
+  }
+
+  #project-modal .description {
+    margin-bottom: 44px;
+    margin-top: 36px;
+  }
+}
+
+#modal #close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
