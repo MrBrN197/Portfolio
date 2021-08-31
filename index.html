@@ -20,6 +20,41 @@
 </head>
 
 <body>
+  <div id="project-modal">
+    <div class="content">
+      <div id="close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"/>
+        </svg>
+      </div>
+      <img class="image" src="./images/project-modal-bg-image.png" alt="project-image">
+      <p class="heading">Keeping track of hundreds of components</p>
+      <ul class="badges">
+        <li class="badge">Ruby on rails</li>
+        <li class="badge">css</li>
+        <li class="badge">Javascript</li>
+      </ul>
+      <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it 1960s with the relea</p>
+      <div class="options">
+        <button class="button">
+          <span class="text">See Live</span>
+          <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 5.13401 5.13401 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C13.9706 18 18 13.9706 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9ZM13 0C12.4477 0 12 0.447715 12 1C12 1.55228 12.4477 2 13 2H14.5858L8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711L16 3.41421V5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5V1C18 0.447715 17.5523 0 17 0H13Z" fill="white"/>
+          </svg>
+        </button>
+        <button class="button">
+          <span class="text">See Source</span>
+          <svg class="icon" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.9992 7.46114C17.9992 6.32124 17.6332 5.25043 16.9345 4.31779C17.2007 3.41969 17.2672 2.27979 17.2007 0.967185C17.1674 0.414508 16.7349 0 16.2025 0C15.9031 0 13.3744 0.0345423 11.9105 1.38169C10.6461 1.1399 9.31526 1.1399 8.01766 1.38169C6.58698 0.0345423 4.05833 0 3.72561 0C3.19326 0 2.76073 0.414508 2.72746 0.967185C2.62764 2.27979 2.72746 3.41969 2.99363 4.31779C2.29492 5.28497 1.92894 6.35579 1.92894 7.46114C1.92894 9.8791 3.72561 12.0553 6.45389 13.0915C6.35407 13.2988 6.28753 13.5406 6.22099 13.7824C3.32635 13.4715 1.96221 10.7427 1.89566 10.639C1.66276 10.1209 1.06387 9.91364 0.564795 10.19C0.0657196 10.4318 -0.133911 11.0535 0.132263 11.5717C0.198806 11.7444 2.02875 15.4404 6.05463 15.8549V18.9637C6.05463 19.5509 6.48716 20 7.05278 20H12.8753C13.441 20 13.8735 19.5509 13.8735 18.9637V14.8532C13.8735 14.2314 13.7404 13.6442 13.5075 13.1261C16.2025 12.0553 17.9992 9.91364 17.9992 7.46114Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="mobile-header">
       <a href="#" class="logo">
@@ -37,9 +72,9 @@
     </div>
     <div class="desktop-header">
       <nav>
-        <a href="#recent-works-start">Portfolio</a>
-        <a href="#about-start">About</a>
-        <a href="#contact-start">Contact</a>
+        <div id="recent-tag" class="link"><a href="#recent-works-start">Portfolio</a><div class="underline"></div></div>
+        <div id="about-tag" class="link"><a href="#about-start">About</a><div class="underline"></div></div>
+        <div id="contact-tag" class="link"><a href="#contact-start">Contact</a><div class="underline"></div></div>
       </nav>
     </div>
   </header>
@@ -126,7 +161,7 @@
               <li>JavScript</li>
               <li>html</li>
             </ul>
-            <button type="button">See Project</button>
+            <button class="see-project" type="button">See Project</button>
           </div>
         </div>
         <div class="card flex">
@@ -141,7 +176,7 @@
               <li>JavScript</li>
               <li>html</li>
             </ul>
-            <button type="button">See Project</button>
+            <button class="see-project" type="button">See Project</button>
           </div>
         </div>
         <div class="card flex">
@@ -156,7 +191,7 @@
               <li>JavScript</li>
               <li>html</li>
             </ul>
-            <button type="button">See Project</button>
+            <button class="see-project" type="button">See Project</button>
           </div>
         </div>
         <div class="card flex">
@@ -171,7 +206,7 @@
               <li>JavScript</li>
               <li>html</li>
             </ul>
-            <button type="button">See Project</button>
+            <button class="see-project" type="button">See Project</button>
           </div>
         </div>
         <div class="card flex">
@@ -186,7 +221,7 @@
               <li>JavScript</li>
               <li>html</li>
             </ul>
-            <button type="button">See Project</button>
+            <button class="see-project" type="button">See Project</button>
           </div>
         </div>
       </div>

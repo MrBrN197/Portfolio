@@ -7,7 +7,7 @@
 
 :root {
   --green-color: #348463;
-  --light-green: #348463;
+  --light-green: #409b75;
   --bg-color: #ebf0ee;
   --font-color2: #3a4a42;
 }
@@ -49,11 +49,12 @@ header {
   right: 0;
   background-color: white;
   z-index: 5;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
   height: 5rem;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  transition: box-shadow 100ms ease-in-out;
 }
 
 .flex {
@@ -94,11 +95,29 @@ header {
   left: 0;
 }
 
-.desktop-header a {
+.desktop-header .link a {
   font-weight: 600;
   padding: 0 12px;
   display: inline-block;
   transition: all 200ms;
+}
+
+.desktop-header .link {
+  display: inline-block;
+  position: relative;
+}
+
+.desktop-header .link .underline {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 4px;
+  background-color: transparent;
+  transition: background-color 60ms ease-out;
+  border-radius: 4px;
 }
 
 .desktop-header a:hover {
@@ -734,4 +753,33 @@ input[type="submit"]:active {
 
 #modal ul li:hover a::after {
   width: 100%;
+}
+
+#project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0;
+  opacity: 1;
+  z-index: 1000;
+  /* transition: opacity 200ms; */
+  padding: 16px;
+  color: var(--font-color1);
+}
+
+#project-modal .content {
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: auto;
 }
