@@ -49,7 +49,7 @@ header {
   right: 0;
   background-color: white;
   z-index: 5;
-  /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 5rem;
   box-sizing: border-box;
   display: flex;
@@ -370,21 +370,24 @@ main .action svg:hover {
   align-items: center;
 }
 
-.card ul {
-  margin: 0 11px;
+.badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px;
 }
 
-.card ul li {
+.badges .badge {
   background-color: var(--bg-color);
   border-radius: 4px;
   padding: 8px 12px;
   font-weight: 600;
   font-size: 12px;
   width: max-content;
+}
+
+.card .badges {
+  margin: 0 11px;
+  justify-content: center;
 }
 
 button,
@@ -526,7 +529,7 @@ input[type="submit"]:active {
   margin: 64px 0 40px;
 }
 
-.about .card ul {
+.about .card .badges {
   max-width: 70vw;
   display: flex;
   flex-wrap: wrap;
@@ -535,7 +538,7 @@ input[type="submit"]:active {
   margin-bottom: 72px;
 }
 
-.about .card ul li {
+.about .card .badges .badge {
   background-color: #fff;
   color: var(--green-color);
   margin: 0;
@@ -818,6 +821,7 @@ input[type="submit"]:active {
 #project-modal .badges {
   justify-content: flex-start;
   color: #3a4a42;
+  margin: 10px 0;
 }
 
 #project-modal .description {
