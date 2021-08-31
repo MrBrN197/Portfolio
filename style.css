@@ -758,7 +758,7 @@ input[type="submit"]:active {
 }
 
 #project-modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -885,7 +885,6 @@ input[type="submit"]:active {
 
 @media screen and (min-width: 992px) {
   #project-modal {
-    background-color: crimson;
     padding: 122px 260px;
   }
 
