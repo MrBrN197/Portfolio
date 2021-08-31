@@ -783,3 +783,84 @@ input[type="submit"]:active {
   position: relative;
   overflow: auto;
 }
+
+#project-modal #close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  padding: 6px;
+  border-radius: 4px;
+  color: white;
+  transition: background-color 140ms ease-in-out;
+  cursor: pointer;
+}
+
+#project-modal #close:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#project-modal .image {
+  object-fit: cover;
+  object-position: left bottom;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-height: 100px;
+}
+
+#project-modal .heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-top: 12px;
+}
+
+#project-modal .badges {
+  justify-content: flex-start;
+  color: #3a4a42;
+}
+
+#project-modal .description {
+  flex-shrink: 0;
+  flex-grow: 0;
+  max-height: max-content;
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-color3);
+  overflow: auto;
+  position: relative;
+}
+
+#project-modal .options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+#project-modal .options button {
+  background-color: #36b37f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  font-size: 17px;
+  line-height: 24px;
+  /* max-width: 12em; */
+  overflow: hidden;
+  width: 100%;
+}
+
+#project-modal .options button .text {
+  display: inline-block;
+  width: max-content;
+}
+
+#project-modal .options button .icon {
+  display: inline-block;
+  vertical-align: middle;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  width: 1.6em;
+}
