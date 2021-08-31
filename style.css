@@ -756,6 +756,7 @@ input[type="submit"]:active {
 }
 
 #project-modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;

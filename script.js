@@ -48,4 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.removeChild(modal);
     });
   });
+
+  document.querySelectorAll('.see-project').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const projectModal = document.getElementById('project-modal');
+      projectModal.style.display = 'block';
+    });
+  });
+
+  const projectClose = document.querySelector('#project-modal #close');
+  projectClose.addEventListener('click', () => {
+    const projectModal = document.querySelector('#project-modal');
+    projectModal.style.display = 'none';
+  });
 });
