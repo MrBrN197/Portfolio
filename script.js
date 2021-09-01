@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const projectContent = [
     {
-      featuredImage: './images/project-modal-bg-image.png',
+      featuredImage: './images/project-1.jpg',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
       name: 'Keeping track of hudnreds of components',
       technologies: ['Ruby on rails', 'css', 'JavaScript'],
