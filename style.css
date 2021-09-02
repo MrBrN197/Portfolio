@@ -643,6 +643,21 @@ input[type="submit"]:active {
   padding: 12px;
 }
 
+.contact-form form #error-message {
+  background-color: rgb(202, 202, 202);
+  color: crimson;
+  align-self: center;
+  padding: 0 1em;
+  text-align: center;
+  border-radius: 0.4em;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form form #error-message {
+    align-self: flex-start;
+  }
+}
+
 .contact-form .social {
   margin: 0;
   margin: 0 auto;
