@@ -181,5 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
       form.email.value = inputDetails.email;
       form.message.value = inputDetails.message;
     }
+
+    const inputs = [form['full-name'], form.email, form.message];
+
+    inputs.forEach((input) => {
+      input.addEventListener('input', () => {
+        inputDetails[input.name] = input.value;
+        localStorage.setItem(storageName, JSON.stringify(inputDetails));
+      });
+    });
   }
 });
