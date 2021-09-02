@@ -4,14 +4,16 @@
 
 > My Personal Portfolio Website
 
+## Live Demo
+
+[https://mrbrn197.github.io/Portfolio/](https://mrbrn197.github.io/Portfolio/)
+
 ___
 
 ### Preview
+
 <img src="./images/desktop.png">
 ---
-
-## Live Demo
-[https://mrbrn197.github.io/Portfolio/](https://mrbrn197.github.io/Portfolio/)
 
 ## Built With
 
