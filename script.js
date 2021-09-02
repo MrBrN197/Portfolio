@@ -124,4 +124,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectModal = document.querySelector('#project-modal');
     projectModal.style.display = 'none';
   });
+
+  const form = document.querySelector('#contact-start form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailInput = form.email;
+    const email = emailInput.value;
+
+    if (email.toLowerCase() !== email) {
+      const errorMessage = form.querySelector('#error-message');
+      // console.log(errorMessage);
+      errorMessage.textContent = 'Error: Email should be lowercase';
+    } else {
+      form.submit();
+    }
+  });
 });
