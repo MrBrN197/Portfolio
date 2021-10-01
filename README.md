@@ -2,7 +2,7 @@
 
 # Portfolio Website
 
-> My Personal Portfolio Website
+> My Personal Portfolio Website that includes all the projects I've done.
 
 ## Live Demo
 

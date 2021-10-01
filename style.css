@@ -820,7 +820,7 @@ input[type="submit"]:active {
 
 #project-modal .image {
   object-fit: cover;
-  object-position: left bottom;
+  object-position: center center;
   flex-shrink: 1;
   flex-grow: 1;
   min-height: 100px;
