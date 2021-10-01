@@ -51,11 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const projectContent = [
     {
-      featuredImage: './images/project-1.jpg',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
-      name: 'Keeping track of hudnreds of components',
-      technologies: ['Ruby on rails', 'css', 'JavaScript'],
-      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+      featuredImage: './images/project-1.png',
+      description: 'A Simple To-Do App to keep track of your tasks using Javscript and the Jest Framework for testing and localStorage API',
+      name: 'A Simple To-Do App to keep track of your tasks',
+      technologies: ['CSS', 'JavaScript'],
+      links: ['https://mrbrn197.github.io/Todo-Project/dist', 'https://github.com/MrBrN197/Todo-Project'],
     },
     {
       featuredImage: './images/project-2.jpg',
@@ -107,12 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
       description.textContent = projectDetails.description;
       const name = projectModal.querySelector('.heading');
       name.textContent = projectDetails.name;
-      const technologies = projectModal.querySelectorAll('.badges .badge');
 
-      for (let i = 0; i < technologies.length; i += 1) {
-        const badge = technologies[i];
-        badge.textContent = projectDetails.technologies[i];
-      }
+      const badges = projectModal.querySelector('.badges');
+      projectDetails.technologies.forEach((tech) => {
+        const li = document.createElement('li');
+        li.textContent = tech;
+        li.classList.add('badge');
+        badges.appendChild(li);
+      });
+
       projectModal.querySelectorAll('.options .button').forEach((x, idx) => {
         x.href = projectDetails.links[idx % 2];
       });
