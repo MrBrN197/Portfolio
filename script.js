@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'Leaderboard is a website that displays scores submitted by different players. It also allows you to submit your score',
       name: 'Leaderboard APP',
       technologies: ['JavaScript', 'SCSS', 'Webpack'],
-      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+      links: ['https://mrbrn197.github.io/Leaderboard/dist', 'https://github.com/MrBrN197/Leaderboard'],
     },
     {
       featuredImage: './images/project-3.jpg',
