@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name.textContent = projectDetails.name;
 
       const badges = projectModal.querySelector('.badges');
+      badges.innerHTML = '';
       projectDetails.technologies.forEach((tech) => {
         const li = document.createElement('li');
         li.textContent = tech;
