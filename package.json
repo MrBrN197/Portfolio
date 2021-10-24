@@ -21,7 +21,6 @@
     "eslint": "eslint . ",
     "stylelint": "stylelint **/*.{css,scss}",
     "hint": "hint ."
-
   },
   "repository": {
     "type": "git",
