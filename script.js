@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
       links: ['https://mrbrn197.github.io/Todo-Project/dist', 'https://github.com/MrBrN197/Todo-Project'],
     },
     {
-      featuredImage: './images/project-2.jpg',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
-      name: 'Project 2',
-      technologies: ['Ruby on rails', 'css', 'JavaScript'],
-      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+      featuredImage: './images/leaderboard.png',
+      description: 'Leaderboard is a website that displays scores submitted by different players. It also allows you to submit your score',
+      name: 'Leaderboard APP',
+      technologies: ['JavaScript', 'SCSS', 'Webpack'],
+      links: ['https://mrbrn197.github.io/Leaderboard/dist', 'https://github.com/MrBrN197/Leaderboard'],
     },
     {
       featuredImage: './images/project-3.jpg',
@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name.textContent = projectDetails.name;
 
       const badges = projectModal.querySelector('.badges');
+      badges.innerHTML = '';
       projectDetails.technologies.forEach((tech) => {
         const li = document.createElement('li');
         li.textContent = tech;
