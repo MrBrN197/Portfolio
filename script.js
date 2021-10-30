@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
       links: ['https://mrbrn197.github.io/Leaderboard/dist', 'https://github.com/MrBrN197/Leaderboard'],
     },
     {
-      featuredImage: './images/project-3.jpg',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
-      name: 'Project 3',
-      technologies: ['Ruby on rails', 'css', 'JavaScript'],
-      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+      featuredImage: './images/musicboard/image2.png',
+      description: 'A website that shows Spotify newly released tracks and allows user to like and comment on them.',
+      name: 'MusicBoard',
+      technologies: ['Webpack', 'JavaScript', 'SCSS', 'Jest'],
+      links: ['https://mrbrn197.github.io/MusicBoard/dist', 'https://github.com/MrBrN197/MusicBoard'],
     },
     {
       featuredImage: './images/project-4.jpg',
