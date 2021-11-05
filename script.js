@@ -20,7 +20,22 @@ const modalHTML = `
   </ul>
 </nav>`;
 
+function setHeaderVisibility() {
+  const header = document.getElementById('header');
+  let lastScroll = window.scrollY;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScroll) {
+      header.classList.add('hidden');
+    } else {
+      header.classList.remove('hidden');
+    }
+    lastScroll = window.scrollY;
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  setHeaderVisibility();
+
   const modal = document.createElement('div');
   modal.id = 'modal';
   modal.innerHTML = modalHTML;
