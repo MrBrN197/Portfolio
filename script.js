@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       links: ['https://mrbrn197.github.io/Todo-Project/dist', 'https://github.com/MrBrN197/Todo-Project'],
     },
     {
-      featuredImage: './images/leaderboard.png',
+      featuredImage: './images/Leaderboard.png',
       description: 'Leaderboard is a website that displays scores submitted by different players. It also allows you to submit your score',
       name: 'Leaderboard APP',
       technologies: ['JavaScript', 'SCSS', 'Webpack'],
