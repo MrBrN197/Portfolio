@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'A website that uses the Space X API to provide commercial services. It enable users to book rockets and join selected missions.',
       name: 'Space Travelers Hub',
       technologies: ['ReactJS', 'ReduxJS', 'SASS', 'Jest'],
-      links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
+      links: ['https://space-travelers-hub.herokuapp.com/', 'https://github.com/MrBrN197/SpaceTravelers'],
     },
     {
       featuredImage: './images/project-5.jpg',
