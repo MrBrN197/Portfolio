@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
       links: ['https://mrbrn197.github.io/MusicBoard/dist', 'https://github.com/MrBrN197/MusicBoard'],
     },
     {
-      featuredImage: './images/project-4.jpg',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam reprehenderit quis qui distinctio repellendus vel nihil eveniet autem modi! Beatae dignissimos reiciendis non quas earum amet ipsam nesciunt a, dolores, repellendus rem quae distinctio modi eveniet. Molestiae, obcaecati et dolorem nobis velit laboriosam odit nemo neque totam magnam provident ratione!',
-      name: 'Project 4',
-      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      featuredImage: 'https://cdn-icons-png.flaticon.com/512/3212/3212608.png',
+      description: 'A website that uses the Space X API to provide commercial services. It enable users to book rockets and join selected missions.',
+      name: 'Space Travelers Hub',
+      technologies: ['ReactJS', 'ReduxJS', 'SASS', 'Jest'],
       links: ['https://mrbrn197.github.io/Portfolio', 'https://github.com/MrBrN197/Portfolio'],
     },
     {
