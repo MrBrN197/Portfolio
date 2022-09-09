@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       description: 'A website that shows Spotify newly released tracks and allows user to like and comment on them.',
       name: 'MusicBoard',
       technologies: ['Webpack', 'JavaScript', 'SCSS', 'Jest'],
-      links: ['https://mrbrn197.github.io/MusicBoard/dist', 'https://github.com/MrBrN197/MusicBoard'],
+      links: ['https://music-board.vercel.app', 'https://github.com/MrBrN197/MusicBoard'],
     },
     {
       featuredImage: 'https://cdn-icons-png.flaticon.com/512/3212/3212608.png',
